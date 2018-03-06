@@ -58,7 +58,7 @@ namespace IndexingBenchmarks
             sw.Start();
 
             var countryLookup = _entitiesLists.ToLookup(e => e.Country);
-            Console.WriteLine("Test2: lokkup done in {0} milliseconds", sw.Elapsed.Milliseconds);
+            Console.WriteLine("Test2: lookup done in {0} milliseconds", sw.Elapsed.Milliseconds);
 
             // Using lookup instead of plain list here.
             foreach (var countryCode in _countryCodes)
